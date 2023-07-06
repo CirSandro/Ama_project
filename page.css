@@ -1,0 +1,50 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:beige;
+  padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.list-recette {
+  flex: 1; /*element flexible*/
+}
+
+.nouv-recette {
+  flex: 1;
+  padding: 10px;
+  background-color:black;
+  color: white;
+  max-width: 500px;
+}
+
+.nouv-recette input[type="text"],
+.nouv-recette textarea {
+  display: block;
+  margin-bottom: 10px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.nouv-recette button {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+}
+
+.details input[type="text"],
+.details textarea {
+  display: block;
+  margin-bottom: 10px;
+  height: 40px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.details {
+  display: none;
+}
