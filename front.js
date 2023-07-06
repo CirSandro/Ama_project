@@ -90,12 +90,16 @@ document.addEventListener('DOMContentLoaded', () => {
         btn_annule.style.display = 'block';
     }
 
+    function annule_modif() {
+        affich_details(id_recipe);
+    }
+
     function maj_modif() {
         const name = document.getElementById('name-details').value;
         const description = document.getElementById('description-details').value;
         const ingredients = document.getElementById('ingredients-details').value.split('\n');
         const instructions = document.getElementById('instructions-details').value;
-        affich_details(id_recipe);
+        annule_modif();
         const maj_recette = {
             name,
             description,
@@ -144,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btn_modif.addEventListener('click', modif_details);
     btn_maj.addEventListener('click', maj_modif);
-    btn_annule.addEventListener('click', affich_details(id_recipe));
+    btn_annule.addEventListener('click', annule_modif);
 
     affichage();
 });
